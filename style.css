@@ -132,6 +132,52 @@ body {
     transition: 0.5s ease all;
 }
 
+#hrline {
+    position: relative;
+    width: 7.5px;
+    color: transparent;
+}
+
+.innercircle {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease all;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.block {
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 100;
+    border-radius: 30px;
+    transition: 0.2s ease all;
+}
+
+#facebook {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    transform: translate(25%, 25%);
+}
+
+#email {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    transform: translate(140%, -85%);
+    stroke-width: 1px;
+}
+
 @media screen and (min-width:1200px) {
     .wrapper {
         display: flex;
@@ -155,53 +201,29 @@ body {
     }
 
     .innercircle {
+        width: 225px;
+        height: 225px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .block {
+        position: absolute;
+        height: 75px;
         width: 150px;
-        height: 150px;
+        background-color: white;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        border-radius: 30px;
+    }
+
+    #facebook {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        transform: translate(25%, 25%);
     }
 }
-
-#hrline {
-    position: relative;
-    width: 7.5px;
-    color: transparent;
-}
-
-.innercircle {
-    position: absolute;
-    width: 225px;
-    height: 225px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: 0.5s ease all;
-    border: 3px solid black;
-    border-radius: 50%;
-}
-
-.block {
-    position: absolute;
-    height: 75px;
-    width: 150px;
-    background-color: white;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-    border-radius: 30px;
-}
-
-#facebook {
-    position: relative;
-    width: 50px;
-    height: 50px;
-    transform: translate(25%, 25%);
-}
-
-#email {
-    position: relative;
-    width: 75px;
-    height: 75px;
-    transform: translate(140%, -85%);
-    stroke-width: 1px;
-}
-
