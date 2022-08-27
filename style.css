@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+/* Style CSS */
+
+
+
+.wrapper .left,
+.wrapper .right {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease all;
+}
+
+/* Loads images */
+.sweets {
+    background: url(images/sweets1.jpg);
+    filter: grayscale(100);
+}
+
+.platters {
+    background: url(images/platters2.jpg);
+    filter: grayscale(100);
+}
+
+.sweets::before {
+    background-color: pink;
+}
+
+.wrapper .caption {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    text-align: center;
+}
+
+.wrapper .caption h1 {
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+.wrapper .caption .button {
+    background: #000;
+    color: #fff;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.25s ease all;
+}
+
+.wrapper .right .caption .button:hover {
+    background: pink;
+    color: #000;
+}
+
+.wrapper .left .caption .button:hover {
+    background: turquoise;
+    color: #000;
+}
+
+.wrapper .side::before {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    content: '';
+    display: block;
+}
+
+.wrapper .left:hover .image,
+.wrapper .right:hover .image {
+    transform: scale(1.2);
+}
+
+.wrapper .left:hover .image {
+    filter: grayscale(0);
+}
+
+.wrapper .right:hover .image {
+    filter: grayscale(0);
+}
+
+.circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 100;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    font-size: 0.8rem;
+    transition: 0.5s ease all;
+}
+
+#grazText {
+    position: absolute;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: 0.5s ease all;
+}
+
+@media screen and (min-width:1200px) {
+    .wrapper {
+        display: flex;
+    }
+
+    .wrapper .left,
+    .wrapper .right {
+        width: 50%;
+        height: 100vh;
+    }
+
+    .circle {
+        display: flex;
+        width: 250px;
+        height: 250px;
+        font-size: 1rem;
+    }
+
+    #grazText {
+        font-size: 2rem;
+    }
+
+    .innercircle {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+#hrline {
+    position: relative;
+    width: 7.5px;
+    color: transparent;
+}
+
+.innercircle {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease all;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+
+.block {
+    position: absolute;
+    height: 75px;
+    width: 150px;
+    background-color: white;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 30px;
+}
+
+#facebook {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform: translate(25%, 25%);
+}
+
+#email {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    transform: translate(140%, -85%);
+    stroke-width: 1px;
+}
+
