@@ -9,8 +9,6 @@ body {
 
 /* Style CSS */
 
-
-
 .wrapper .left,
 .wrapper .right {
     width: 100%;
@@ -58,6 +56,15 @@ body {
 .wrapper .caption h1 {
     text-transform: uppercase;
     letter-spacing: 0.25em;
+}
+
+h1 {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .wrapper .caption .button {
@@ -170,12 +177,13 @@ body {
     transform: translate(25%, 25%);
 }
 
-#email {
+#mail {
     position: relative;
-    width: 75px;
-    height: 75px;
-    transform: translate(140%, -85%);
-    stroke-width: 1px;
+    width: 35px;
+    height: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(5%, -85%);
 }
 
 @media screen and (min-width:1200px) {
@@ -225,5 +233,21 @@ body {
         width: 50px;
         height: 50px;
         transform: translate(25%, 25%);
+    }
+    
+    #hrline {
+        position: relative;
+        width: 7.5px;
+        height: 1px;
+        color: transparent;
+    }
+
+    #mail {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        left: 50%;
+        transform: translate(10%, -80%);
     }
 }
